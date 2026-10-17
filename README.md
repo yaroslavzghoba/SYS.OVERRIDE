@@ -1,4 +1,4 @@
-# SYS.OVERRIDE Design System
+# SYS.OVERRIDE 🌿⚙️
 
 The design system based on the neo-brutalist geometry, saturated retro hues, terminal-era interfaces, and signs of a world where vegetation has outlived the machines that built it.
 
