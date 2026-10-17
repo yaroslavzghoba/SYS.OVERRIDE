@@ -1,0 +1,16 @@
+name: Compare previous and current versions
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  compare-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: yaroslavzghoba/compare-versions@0.2.5
+        with:
+          repo-clone-url: 'https://${{ secrets.PAT_FOR_CLONING }}@github.com/${{ github.repository }}.git'
+          versions-extractor: |
+            node -p "require('./package.json').version"
+          shell: 'bash'
