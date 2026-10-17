@@ -1,0 +1,24 @@
+{
+  "name": "sys.override",
+  "version": "1.0.0",
+  "description": "The design system based on the neo-brutalist geometry, saturated retro hues, terminal-era interfaces, and signs of a world where vegetation has outlived the machines that built it.",
+  "main": "dist/style.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lightningcss --bundle --minify src/index.css -o dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslavzghoba/SYS.OVERRIDE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaroslavzghoba/SYS.OVERRIDE/issues"
+  },
+  "homepage": "https://github.com/yaroslavzghoba/SYS.OVERRIDE#README.md",
+  "devDependencies": {
+    "lightningcss-cli": "^1.33.0"
+  }
+}
