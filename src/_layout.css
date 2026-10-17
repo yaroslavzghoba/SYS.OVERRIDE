@@ -1,0 +1,30 @@
+.so-scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.so-section {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: var(--so-space-5);
+  scroll-snap-align: start;
+  isolation: isolate;
+}
+
+.so-section > :not(.so-bg-video-wrapper) {
+  position: relative;
+  z-index: 1;
+}
+
+.so-section-content {
+  width: min(100%, 800px);
+}
+
+@media (max-width: 680px) {
+  .so-section {
+    padding: var(--so-space-4);
+  }
+}

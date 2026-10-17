@@ -1,0 +1,35 @@
+.so-data-panel {
+  display: grid;
+  gap: var(--so-space-6);
+  width: min(100%, 800px);
+  padding: var(--so-space-6);
+  border: var(--so-border-thick);
+  box-shadow: var(--so-shadow-neo);
+}
+
+.so-data-panel dl {
+  display: grid;
+  gap: var(--so-space-3);
+  margin: 0;
+}
+
+.so-data-panel dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--so-space-4);
+  padding-bottom: var(--so-space-2);
+  border-bottom: var(--so-border-thin);
+  border-style: dashed;
+}
+
+.so-data-panel dt,
+.so-data-panel dd {
+  margin: 0;
+  font-family: var(--so-font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.so-data-panel dd {
+  text-align: right;
+}

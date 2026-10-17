@@ -1,0 +1,50 @@
+.so-neo-btn {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: var(--so-space-3) var(--so-space-4);
+  border: var(--so-border-thick);
+  box-shadow: var(--so-shadow-control);
+  color: var(--so-color-black);
+  font-family: var(--so-font-mono);
+  font-size: var(--so-text-sm);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform var(--so-duration-fast) var(--so-ease-mechanical), box-shadow var(--so-duration-fast) var(--so-ease-mechanical), background-color var(--so-duration-standard) var(--so-ease-mechanical);
+}
+
+.so-bg-green.so-neo-btn,
+.so-bg-night.so-neo-btn,
+.so-bg-rust.so-neo-btn {
+  color: var(--so-color-white);
+}
+
+.so-neo-btn:hover {
+  background: var(--so-color-black);
+  color: var(--so-color-sage);
+}
+
+.so-neo-btn:active {
+  transform: translate(6px, 6px);
+  box-shadow: none;
+}
+
+.so-neo-btn[disabled],
+.so-neo-btn[aria-disabled="true"] {
+  background: var(--so-color-cream-dark);
+  color: var(--so-color-ink-soft);
+  box-shadow: none;
+  filter: saturate(0.35);
+  pointer-events: none;
+}
+
+.so-giant-btn {
+  width: 100%;
+  min-height: 72px;
+  font-size: clamp(1rem, 3vw, var(--so-text-xl));
+}

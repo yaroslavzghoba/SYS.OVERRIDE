@@ -1,0 +1,39 @@
+.so-texture-paper {
+  background-image: radial-gradient(rgb(17 17 17 / 10%) 0.7px, transparent 0.7px);
+  background-size: 7px 7px;
+}
+
+.so-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .so-scroll-container {
+    scroll-snap-type: none;
+  }
+
+  .so-bg-video-wrapper video {
+    display: none;
+  }
+}

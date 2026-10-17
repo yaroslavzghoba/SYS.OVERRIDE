@@ -1,0 +1,66 @@
+body {
+  font-family: var(--so-font-mono);
+  font-size: var(--so-text-md);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--so-font-display);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  font-size: var(--so-text-display);
+}
+
+h2 {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+h3 {
+  font-size: var(--so-text-xl);
+}
+
+p {
+  max-width: 65ch;
+  margin: 0;
+  color: var(--so-content-muted);
+  font-size: var(--so-text-lg);
+}
+
+small,
+.so-mono-text,
+.so-metadata {
+  font-family: var(--so-font-mono);
+  font-size: var(--so-text-xs);
+  line-height: 1.2;
+}
+
+.so-mono-text,
+.so-metadata {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+code,
+pre {
+  font-family: var(--so-font-mono);
+}
+
+pre {
+  overflow-x: auto;
+  padding: var(--so-space-4);
+  background: var(--so-color-night);
+  color: var(--so-color-white);
+}

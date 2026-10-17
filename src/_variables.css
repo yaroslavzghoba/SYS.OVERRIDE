@@ -1,0 +1,65 @@
+:root {
+  /* Palette */
+  --so-color-bg-cream: #f4e4c1;
+  --so-color-orange: #e85d04;
+  --so-color-yellow: #ffba08;
+  --so-color-green: #556b2f;
+  --so-color-black: #111111;
+  --so-color-ink-soft: #3a3329;
+  --so-color-cream-dark: #d9c397;
+  --so-color-rust: #a63d24;
+  --so-color-sage: #879b4a;
+  --so-color-teal: #2f7770;
+  --so-color-night: #202526;
+  --so-color-white: #fff8e8;
+
+  /* Semantic surfaces and content */
+  --so-surface-page: var(--so-color-bg-cream);
+  --so-surface-primary: var(--so-color-orange);
+  --so-surface-secondary: var(--so-color-yellow);
+  --so-surface-organic: var(--so-color-green);
+  --so-surface-inverse: var(--so-color-black);
+  --so-content-primary: var(--so-color-black);
+  --so-content-inverse: var(--so-color-bg-cream);
+  --so-content-muted: var(--so-color-ink-soft);
+  --so-state-success: var(--so-color-green);
+  --so-state-warning: var(--so-color-yellow);
+  --so-state-danger: var(--so-color-rust);
+  --so-state-info: var(--so-color-teal);
+
+  /* Typography */
+  --so-font-display: "Arial Black", Impact, Haettenschweiler, sans-serif;
+  --so-font-mono: "Courier New", Courier, monospace;
+  --so-text-xs: 0.75rem;
+  --so-text-sm: 0.9rem;
+  --so-text-md: 1rem;
+  --so-text-lg: 1.3rem;
+  --so-text-xl: 2rem;
+  --so-text-display: clamp(2.5rem, 8vw, 4rem);
+
+  /* Spacing */
+  --so-space-1: 4px;
+  --so-space-2: 8px;
+  --so-space-3: 12px;
+  --so-space-4: 16px;
+  --so-space-5: 20px;
+  --so-space-6: 24px;
+  --so-space-8: 32px;
+  --so-space-10: 40px;
+  --so-space-12: 48px;
+  --so-space-16: 64px;
+
+  /* Geometry and depth */
+  --so-border-thick: 4px solid var(--so-color-black);
+  --so-border-medium: 3px solid var(--so-color-black);
+  --so-border-thin: 2px solid var(--so-color-black);
+  --so-radius-control: 2px;
+  --so-shadow-neo: 12px 12px 0 var(--so-color-black);
+  --so-shadow-control: 6px 6px 0 var(--so-color-black);
+
+  /* Motion */
+  --so-duration-fast: 100ms;
+  --so-duration-standard: 200ms;
+  --so-duration-atmospheric: 300ms;
+  --so-ease-mechanical: ease-out;
+}

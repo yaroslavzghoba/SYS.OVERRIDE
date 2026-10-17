@@ -1,0 +1,27 @@
+.so-status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--so-space-2) var(--so-space-6);
+  padding: var(--so-space-3) var(--so-space-4);
+  border: var(--so-border-thick);
+  font-family: var(--so-font-mono);
+  font-size: var(--so-text-sm);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.so-status-bar.so-bg-green {
+  color: var(--so-color-white);
+}
+
+.so-status-bar [data-status="warning"] {
+  color: var(--so-color-black);
+}
+
+@media (max-width: 520px) {
+  .so-status-bar {
+    flex-direction: column;
+  }
+}
