@@ -39,18 +39,18 @@ Use the vocabulary as a layer over plain meaning. Never make a label so cryptic 
 
 | Token | Hex | Role | Recommended use |
 | --- | --- | --- | --- |
-| `--color-bg-cream` | `#F4E4C1` | Reclaimed paper | Page background, light cards, muted surfaces |
-| `--color-orange` | `#E85D04` | Signal orange | Primary feature cards, prominent actions, warnings |
-| `--color-yellow` | `#FFBA08` | Hazard yellow | Secondary cards, highlights, attention states |
-| `--color-green` | `#556B2F` | Moss / oxidized green | Nature accents, inverse cards, stable status |
-| `--color-black` | `#111111` | Carbon black | Text, borders, shadows, high-contrast surfaces |
-| `--color-ink-soft` | `#3A3329` | Weathered ink | Secondary text on cream surfaces |
-| `--color-cream-dark` | `#D9C397` | Aged paper shadow | Dividers, disabled surfaces, subtle fills |
-| `--color-rust` | `#A63D24` | Oxidized metal | Destructive actions, error states, deep accents |
-| `--color-sage` | `#879B4A` | New growth | Positive secondary accent, hover detail |
-| `--color-teal` | `#2F7770` | Old monitor phosphor | Informational states and data visualization |
-| `--color-night` | `#202526` | Unlit console | Dark panels, code blocks, media overlays |
-| `--color-white` | `#FFF8E8` | Fresh signal paper | Text on dark or saturated surfaces |
+| `--so-color-bg-cream` | `#F4E4C1` | Reclaimed paper | Page background, light cards, muted surfaces |
+| `--so-color-orange` | `#E85D04` | Signal orange | Primary feature cards, prominent actions, warnings |
+| `--so-color-yellow` | `#FFBA08` | Hazard yellow | Secondary cards, highlights, attention states |
+| `--so-color-green` | `#556B2F` | Moss / oxidized green | Nature accents, inverse cards, stable status |
+| `--so-color-black` | `#111111` | Carbon black | Text, borders, shadows, high-contrast surfaces |
+| `--so-color-ink-soft` | `#3A3329` | Weathered ink | Secondary text on cream surfaces |
+| `--so-color-cream-dark` | `#D9C397` | Aged paper shadow | Dividers, disabled surfaces, subtle fills |
+| `--so-color-rust` | `#A63D24` | Oxidized metal | Destructive actions, error states, deep accents |
+| `--so-color-sage` | `#879B4A` | New growth | Positive secondary accent, hover detail |
+| `--so-color-teal` | `#2F7770` | Old monitor phosphor | Informational states and data visualization |
+| `--so-color-night` | `#202526` | Unlit console | Dark panels, code blocks, media overlays |
+| `--so-color-white` | `#FFF8E8` | Fresh signal paper | Text on dark or saturated surfaces |
 
 Large surfaces should use one dominant color, one text color, and one supporting accent. Avoid turning every component into a different color block.
 
@@ -60,26 +60,26 @@ Color should communicate function in addition to atmosphere:
 
 ```css
 :root {
-  --surface-page: var(--color-bg-cream);
-  --surface-primary: var(--color-orange);
-  --surface-secondary: var(--color-yellow);
-  --surface-organic: var(--color-green);
-  --surface-inverse: var(--color-black);
+  --so-surface-page: var(--so-color-bg-cream);
+  --so-surface-primary: var(--so-color-orange);
+  --so-surface-secondary: var(--so-color-yellow);
+  --so-surface-organic: var(--so-color-green);
+  --so-surface-inverse: var(--so-color-black);
 
-  --content-primary: var(--color-black);
-  --content-inverse: var(--color-bg-cream);
-  --content-muted: var(--color-ink-soft);
+  --so-content-primary: var(--so-color-black);
+  --so-content-inverse: var(--so-color-bg-cream);
+  --so-content-muted: var(--so-color-ink-soft);
 
-  --state-success: var(--color-green);
-  --state-warning: var(--color-yellow);
-  --state-danger: var(--color-rust);
-  --state-info: var(--color-teal);
+  --so-state-success: var(--so-color-green);
+  --so-state-warning: var(--so-color-yellow);
+  --so-state-danger: var(--so-color-rust);
+  --so-state-info: var(--so-color-teal);
 }
 ```
 
 ### Contrast rules
 
-- Use `--color-black` for text on cream, orange, and yellow.
+- Use `--so-color-black` for text on cream, orange, and yellow.
 - Use cream or white text on green, night, and rust surfaces.
 - Do not use yellow text on cream or orange text on yellow for body copy.
 - A color block is not enough to communicate status; pair it with a label, icon, or text.
@@ -100,8 +100,8 @@ Recommended fallbacks preserve the intent if the preferred font is unavailable:
 
 ```css
 :root {
-  --font-display: "Arial Black", Impact, Haettenschweiler, sans-serif;
-  --font-mono: "Courier New", Courier, monospace;
+  --so-font-display: "Arial Black", Impact, Haettenschweiler, sans-serif;
+  --so-font-mono: "Courier New", Courier, monospace;
 }
 ```
 
@@ -111,12 +111,12 @@ Use a compact, high-impact scale. Values are a starting point and can be fluid o
 
 | Token | Size | Line height | Typical use |
 | --- | ---: | ---: | --- |
-| `--text-xs` | `0.75rem` | `1.2` | Metadata, labels |
-| `--text-sm` | `0.9rem` | `1.35` | Navigation, status text |
-| `--text-md` | `1rem` | `1.5` | Supporting interface copy |
-| `--text-lg` | `1.3rem` | `1.5` | Current body paragraph size |
-| `--text-xl` | `2rem` | `1.1` | Secondary headings, large actions |
-| `--text-display` | `clamp(2.5rem, 8vw, 4rem)` | `1` | Page and project titles |
+| `--so-text-xs` | `0.75rem` | `1.2` | Metadata, labels |
+| `--so-text-sm` | `0.9rem` | `1.35` | Navigation, status text |
+| `--so-text-md` | `1rem` | `1.5` | Supporting interface copy |
+| `--so-text-lg` | `1.3rem` | `1.5` | Current body paragraph size |
+| `--so-text-xl` | `2rem` | `1.1` | Secondary headings, large actions |
+| `--so-text-display` | `clamp(2.5rem, 8vw, 4rem)` | `1` | Page and project titles |
 
 ### Typography rules
 
@@ -130,7 +130,7 @@ Use a compact, high-impact scale. Values are a starting point and can be fluid o
 ### Content examples
 
 ```html
-<span class="mono-text">&gt; archive_load // FILE_01</span>
+<span class="so-mono-text">&gt; archive_load // FILE_01</span>
 <h2>KOTCORE</h2>
 <p>A lightweight grid-based engine for building small worlds that keep running.</p>
 ```
@@ -142,7 +142,7 @@ Use a compact, high-impact scale. Values are a starting point and can be fluid o
 The design is deliberately square and assembled rather than polished:
 
 - Border radius: `0` by default.
-- Primary border: `4px solid var(--color-black)`.
+- Primary border: `4px solid var(--so-color-black)`.
 - Secondary rules: `2px` or `3px` dashed black lines.
 - Avoid pills, soft cards, glassmorphism, and large rounded corners.
 - If a radius is needed for a native control, keep it subtle (`2px` maximum) and retain the thick border.
@@ -153,16 +153,16 @@ Use a predictable four-point rhythm:
 
 ```css
 :root {
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 20px;
-  --space-6: 24px;
-  --space-8: 32px;
-  --space-10: 40px;
-  --space-12: 48px;
-  --space-16: 64px;
+  --so-space-1: 4px;
+  --so-space-2: 8px;
+  --so-space-3: 12px;
+  --so-space-4: 16px;
+  --so-space-5: 20px;
+  --so-space-6: 24px;
+  --so-space-8: 32px;
+  --so-space-10: 40px;
+  --so-space-12: 48px;
+  --so-space-16: 64px;
 }
 ```
 
@@ -172,11 +172,11 @@ Use larger spacing to create a poster-like composition, but keep related metadat
 
 ```css
 :root {
-  --border-thick: 4px solid var(--color-black);
-  --border-medium: 3px solid var(--color-black);
-  --border-thin: 2px solid var(--color-black);
-  --shadow-neo: 12px 12px 0 var(--color-black);
-  --shadow-control: 6px 6px 0 var(--color-black);
+  --so-border-thick: 4px solid var(--so-color-black);
+  --so-border-medium: 3px solid var(--so-color-black);
+  --so-border-thin: 2px solid var(--so-color-black);
+  --so-shadow-neo: 12px 12px 0 var(--so-color-black);
+  --so-shadow-control: 6px 6px 0 var(--so-color-black);
 }
 ```
 
@@ -195,11 +195,11 @@ The primary composition is a sequence of full-viewport sections:
 - Background media belongs to a section and must never compete with its card.
 
 ```css
-.section {
+.so-section {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: var(--space-5);
+  padding: var(--so-space-5);
   scroll-snap-align: start;
 }
 ```
@@ -239,12 +239,12 @@ The system navigation is a persistent command strip. It contains a status brand 
 - Bottom edge: thick black rule
 
 ```html
-<nav class="sys-nav" aria-label="Primary navigation">
-  <div class="nav-brand">SYS.STATUS: [OK]</div>
-  <div class="nav-links">
-    <a class="nav-link active" href="#welcome">01_INIT</a>
-    <a class="nav-link" href="#projects">02_PRJCT</a>
-    <a class="nav-link" href="#contact">03_COMMS</a>
+<nav class="so-sys-nav" aria-label="Primary navigation">
+  <div class="so-nav-brand">SYS.STATUS: [OK]</div>
+  <div class="so-nav-links">
+    <a class="so-nav-link so-active" href="#so-welcome">01_INIT</a>
+    <a class="so-nav-link" href="#so-projects">02_PRJCT</a>
+    <a class="so-nav-link" href="#so-contact">03_COMMS</a>
   </div>
 </nav>
 ```
@@ -261,9 +261,9 @@ The system navigation is a persistent command strip. It contains a status brand 
 The neo card is the main content container. It is a flat, rectangular slab with a thick outline and offset shadow.
 
 ```html
-<article class="neo-card bg-orange">
-  <div class="card-header">
-    <span class="mono-text">&gt; root_access // USER: GUEST</span>
+<article class="so-neo-card so-bg-orange">
+  <div class="so-card-header">
+    <span class="so-mono-text">&gt; root_access // USER: GUEST</span>
   </div>
   <h1>YAROSLAV_ZGHOBA</h1>
   <p>Developer focused on Kotlin Multiplatform and backend systems.</p>
@@ -282,8 +282,8 @@ The neo card is the main content container. It is a flat, rectangular slab with 
 The card header is a small piece of system metadata separated from the content by a dashed rule.
 
 ```html
-<div class="card-header">
-  <span class="mono-text">&gt; archive_load // FILE_02</span>
+<div class="so-card-header">
+  <span class="so-mono-text">&gt; archive_load // FILE_02</span>
 </div>
 ```
 
@@ -294,7 +294,7 @@ Keep labels short. Prefer a command plus an identifier. The rule is structural, 
 The status bar communicates a compact pair of facts, usually one technical and one atmospheric.
 
 ```html
-<div class="status-bar bg-green" role="status">
+<div class="so-status-bar so-bg-green" role="status">
   <span>SYSTEM: STABLE</span>
   <span>NATURE: 78% COVERAGE</span>
 </div>
@@ -307,7 +307,7 @@ On small screens, allow the values to wrap into a column. Status text should hav
 Buttons are physical controls: thick border, hard shadow, uppercase label, and a pressed state.
 
 ```html
-<a class="neo-btn bg-green" href="https://example.com">
+<a class="so-neo-btn so-bg-green" href="https://example.com">
   PROJECT_DETAILS_&gt;
 </a>
 ```
@@ -329,7 +329,7 @@ Use a button for an action and a link for navigation. Do not style every text li
 The contact action is an intentionally oversized call to action. It should be used once per major page or flow.
 
 ```html
-<a class="neo-btn giant-btn bg-orange" href="mailto:yaroslavzghoba@gmail.com">
+<a class="so-neo-btn so-giant-btn so-bg-orange" href="mailto:yaroslavzghoba@gmail.com">
   [ SEND_E-MAIL ]
 </a>
 ```
@@ -341,18 +341,18 @@ The label should describe the result. Good examples include `[ OPEN_CHANNEL ]`, 
 For project listings, combine an archive label, a short project title, a one-to-three sentence description, metadata, and one action.
 
 ```html
-<article class="neo-card bg-yellow project-card">
-  <div class="card-header">
-    <span class="mono-text">&gt; archive_load // FILE_01</span>
+<article class="so-neo-card so-bg-yellow so-project-card">
+  <div class="so-card-header">
+    <span class="so-mono-text">&gt; archive_load // FILE_01</span>
   </div>
   <h2>KOTCORE</h2>
   <p>A lightweight 2D grid-based game engine built with Kotlin Multiplatform.</p>
-  <ul class="tag-list" aria-label="Technologies">
+  <ul class="so-tag-list" aria-label="Technologies">
     <li>KOTLIN</li>
     <li>COMPOSE</li>
     <li>KMP</li>
   </ul>
-  <a class="neo-btn bg-green" href="#">PROJECT_DETAILS_&gt;</a>
+  <a class="so-neo-btn so-bg-green" href="#">PROJECT_DETAILS_&gt;</a>
 </article>
 ```
 
@@ -363,11 +363,11 @@ Tags should be compact and secondary. Avoid making the tag list visually louder 
 Video, imagery, and atmospheric textures are environmental layers, not primary content.
 
 ```html
-<div class="bg-video-wrapper" aria-hidden="true">
+<div class="so-bg-video-wrapper" aria-hidden="true">
   <video autoplay loop muted playsinline>
     <source src="media/reclaimed-city.mp4" type="video/mp4" />
   </video>
-  <div class="video-overlay"></div>
+  <div class="so-video-overlay"></div>
 </div>
 ```
 
@@ -385,8 +385,8 @@ Video, imagery, and atmospheric textures are environmental layers, not primary c
 For future pages, use a data panel to show metrics, technologies, or system readings.
 
 ```html
-<section class="data-panel bg-cream">
-  <div class="card-header"><span class="mono-text">&gt; telemetry // LIVE</span></div>
+<section class="so-data-panel so-bg-cream">
+  <div class="so-card-header"><span class="so-mono-text">&gt; telemetry // LIVE</span></div>
   <dl>
     <div><dt>UPTIME</dt><dd>99.98%</dd></div>
     <div><dt>STACK</dt><dd>KOTLIN / KTOR</dd></div>
@@ -405,10 +405,10 @@ Motion should feel like old machinery starting up: brief, purposeful, and slight
 
 ```css
 :root {
-  --duration-fast: 100ms;
-  --duration-standard: 200ms;
-  --duration-atmospheric: 300ms;
-  --ease-mechanical: ease-out;
+  --so-duration-fast: 100ms;
+  --so-duration-standard: 200ms;
+  --so-duration-atmospheric: 300ms;
+  --so-ease-mechanical: ease-out;
 }
 ```
 
@@ -439,7 +439,7 @@ Scroll snapping is part of the editorial composition, but it must not trap users
     animation-iteration-count: 1 !important;
   }
 
-  .bg-video-wrapper video {
+  .so-bg-video-wrapper video {
     display: none;
   }
 }
@@ -475,7 +475,7 @@ Suggested focus treatment:
 
 ```css
 :where(a, button, input, select, textarea):focus-visible {
-  outline: 4px solid var(--color-teal);
+  outline: 4px solid var(--so-color-teal);
   outline-offset: 4px;
 }
 ```
@@ -549,14 +549,14 @@ The existing portfolio maps to this system as follows:
 
 | System concept | Current implementation |
 | --- | --- |
-| System navigation | `.sys-nav`, `.nav-links`, `.nav-link` |
-| Full-screen composition | `.scroll-container`, `.section` |
-| Neo card | `.neo-card` |
-| Card metadata | `.card-header`, `.mono-text` |
-| Status readout | `.status-bar` |
-| Primary action | `.neo-btn`, `.giant-btn` |
-| Palette utilities | `.bg-orange`, `.bg-yellow`, `.bg-green`, `.bg-cream` |
-| Atmospheric media | `.bg-video-wrapper`, `.video-overlay` |
+| System navigation | `.so-sys-nav`, `.so-nav-links`, `.so-nav-link` |
+| Full-screen composition | `.so-scroll-container`, `.so-section` |
+| Neo card | `.so-neo-card` |
+| Card metadata | `.so-card-header`, `.so-mono-text` |
+| Status readout | `.so-status-bar` |
+| Primary action | `.so-neo-btn`, `.so-giant-btn` |
+| Palette utilities | `.so-bg-orange`, `.so-bg-yellow`, `.so-bg-green`, `.so-bg-cream` |
+| Atmospheric media | `.so-bg-video-wrapper`, `.so-video-overlay` |
 | Section awareness | `IntersectionObserver` in `src/main.js` |
 
 This document describes both the current foundation and the intended direction for future components. When extending the site, add new tokens and components here first so the portfolio remains a coherent world rather than a collection of one-off effects.
