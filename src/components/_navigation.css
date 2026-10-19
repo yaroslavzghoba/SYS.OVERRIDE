@@ -1,5 +1,5 @@
 .so-sys-nav {
-  position: sticky;
+  position: fixed;
   z-index: 20;
   top: 0;
   display: flex;
