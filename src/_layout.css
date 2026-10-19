@@ -7,7 +7,7 @@
 .so-section {
   position: relative;
   display: grid;
-  min-height: calc(100vh - var(--so-sys-nav-min-height));
+  min-height: 100vh;
   place-items: center;
   padding: var(--so-space-5);
   scroll-snap-align: start;
