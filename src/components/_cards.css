@@ -9,7 +9,6 @@
 
 .so-card-header {
   padding-bottom: var(--so-space-3);
-  border-bottom: var(--so-border-medium);
   border-style: dashed;
 }
 
